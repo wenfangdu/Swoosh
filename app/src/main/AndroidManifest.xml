@@ -21,8 +21,9 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".LeagueActivity">
-        </activity>
+        <activity android:name=".LeagueActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".SkillActivity"></activity>
     </application>
 
 </manifest>

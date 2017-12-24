@@ -6,4 +6,14 @@
     <string name="co_ed">co-ed</string>
     <string name="next">next</string>
     <string name="togglebutton">ToggleButton</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="baller">baller</string>
+    <string name="background_img">background img</string>
+    <string name="swoosh_logo">swoosh logo</string>
+    <string name="beginner">beginner</string>
+    <string name="finish">finish</string>
+    <string name="go_all_in">GO ALL IN</string>
+    <string name="on_going_all_out">ON GOING ALL OUT</string>
+    <string name="dominate_the_team_in_your_city_and_dominate_the_league">Dominate the team in your city, and dominate the league</string>
+    <string name="get_started">GET STARTED</string>
 </resources>
