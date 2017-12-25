@@ -11,7 +11,18 @@ import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
 
-    val player= Player("","")
+    var player = Player("", "")
+
+//    override fun onSaveInstanceState(outState: Bundle?) {
+//        super.onSaveInstanceState(outState)
+//        outState?.putParcelable(EXTRA_PLAYER, player)
+//    }
+//
+//    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+//        super.onRestoreInstanceState(savedInstanceState)
+//        if (savedInstanceState != null)
+//            player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,11 +53,10 @@ class LeagueActivity : BaseActivity() {
     fun leagueNextBtnClicked(view: View) {
         if (player.league != "") {
             val skillActivity = Intent(this, SkillActivity::class.java)
-            skillActivity.putExtra(EXTRA_PLAYER,player)
+            skillActivity.putExtra(EXTRA_PLAYER, player)
             startActivity(skillActivity)
-        } else {
+        } else
             Toast.makeText(this, "Please select a league", Toast.LENGTH_SHORT).show()
-        }
     }
 
 }

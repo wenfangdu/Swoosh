@@ -6,10 +6,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Controller.WelcomeActivity">
+        <activity
+            android:name=".Controller.WelcomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +22,18 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".Controller.LeagueActivity" />
-        <activity android:name=".Controller.BaseActivity" />
-        <activity android:name=".Controller.SkillActivity" />
-        <activity android:name=".Controller.FinishActivity" />
+        <activity
+            android:name=".Controller.LeagueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.SkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controller.FinishActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

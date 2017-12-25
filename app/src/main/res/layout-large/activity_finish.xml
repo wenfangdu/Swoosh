@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/searchLeaguesTV"
-        android:layout_width="347dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
@@ -27,7 +27,7 @@
         android:layout_marginTop="8dp"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@id/progressBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
