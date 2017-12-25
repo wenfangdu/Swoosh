@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leonbec.swoosh.LeagueActivity"
+    tools:context="com.leonbec.swoosh.Controller.LeagueActivity"
     tools:layout_editor_absoluteY="25dp">
 
     <ImageView
@@ -45,50 +45,53 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/mensBtn"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="mensBtnClicked"
         android:text="@string/togglebutton"
         android:textColor="@android:color/white"
         android:textOff="@string/mens"
         android:textOn="@string/mens"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@id/toggleButton2"
-        app:layout_constraintEnd_toEndOf="@+id/toggleButton2"
-        app:layout_constraintStart_toStartOf="@+id/toggleButton2"
+        app:layout_constraintBottom_toTopOf="@id/womensBtn"
+        app:layout_constraintEnd_toEndOf="@+id/womensBtn"
+        app:layout_constraintStart_toStartOf="@+id/womensBtn"
         app:layout_constraintTop_toBottomOf="@id/textView4"
         app:layout_constraintVertical_bias="0.14999998"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ToggleButton
-        android:id="@+id/toggleButton2"
+        android:id="@+id/womensBtn"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="womensBtnClicked"
         android:text="@string/togglebutton"
         android:textColor="@android:color/white"
         android:textOff="@string/womens"
         android:textOn="@string/womens"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/toggleButton3"
-        app:layout_constraintEnd_toEndOf="@+id/toggleButton3"
-        app:layout_constraintStart_toStartOf="@+id/toggleButton3"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton"
+        app:layout_constraintBottom_toTopOf="@+id/coedBtn"
+        app:layout_constraintEnd_toEndOf="@+id/coedBtn"
+        app:layout_constraintStart_toStartOf="@+id/coedBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mensBtn"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <ToggleButton
-        android:id="@+id/toggleButton3"
+        android:id="@+id/coedBtn"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/swoosh_toggle"
         android:fontFamily="@font/montserrat"
+        android:onClick="coedBtnClicked"
         android:text="@string/togglebutton"
         android:textColor="@android:color/white"
         android:textOff="@string/co_ed"
@@ -97,7 +100,7 @@
         app:layout_constraintBottom_toTopOf="@+id/leagueNextBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/womensBtn" />
 
     <Button
         android:id="@+id/leagueNextBtn"

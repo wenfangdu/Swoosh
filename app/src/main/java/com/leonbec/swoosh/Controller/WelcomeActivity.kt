@@ -1,10 +1,9 @@
-package com.leonbec.swoosh
+package com.leonbec.swoosh.Controller
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_welcome.*
+import com.leonbec.swoosh.R
 
 class WelcomeActivity : BaseActivity() {
 
